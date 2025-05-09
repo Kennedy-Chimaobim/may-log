@@ -1,5 +1,4 @@
-# may-log
-# Dev Progress Log – May 2025
+# Log – May 2025
 
 This repository documents my ongoing growth in software development and technical writing.
 
