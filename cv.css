@@ -1,0 +1,110 @@
+body {
+  
+  font-family: Roboto, Arial;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  
+  
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header .nav a { 
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header .nav a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.content {
+  flex: 3;
+  margin: 20px;
+}
+
+
+.image-container{
+  flex: 1; /* Assigns the image container the same flex factor as the content */
+  display: flex;
+  align-items: center; /* Vertically center the image in the container */
+  justify-content: center; /* Horizontally center the image */
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.image-container img {
+  width: 100%; /* Make the image fully occupy its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer form label {
+  margin: 5px 0;
+}
+
+footer form input,
+footer form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+footer form button {
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer form button:hover {
+  background-color: #777;
+}
+
+@media (min-width: 768px) {
+  main {
+      flex-direction: row;
+  }
+  .content, .image-container {
+      margin: 20px;
+  }
+}
+
+
+
